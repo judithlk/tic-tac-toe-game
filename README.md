@@ -10,4 +10,6 @@ Fonts from Google fonts
 
 If you like this, please leave a star.
 
+NOTE: There's a slight issue with how the alert box displays on iPhone browsers, but I am working on it.
+
 Judith x
