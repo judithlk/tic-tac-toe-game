@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=VT323&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FCD77F;
+}
+
+.main-container {
+    margin: 0;
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.title-container {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tile-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* for mobile phones: */
+.tile-box {
+    /* border: 1px solid green; */
+    height: 40vw;
+    width: 80vw;
+    margin-left: 12vw;
+    margin-top: 5vh;
+}
+
+.line {
+    /* border: 1px solid blue; */
+    width: 99%;
+    height: 23vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 1%;
+    /* padding-right: 1% */
+}
+
+.tile {
+    border: 2px solid black;
+    /* background-color: grey; */
+    width: 23vw;
+    height: 23vw;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.letter {
+    font-size: 20vw;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button-box {
+    /* border: 1px solid red; */
+    margin: 0;
+    margin-top: 40%;
+    margin-left: 16vw;
+    width: 65vw;
+    height: max-content;
+    padding: 0;
+    display: flex;
+}
+
+.button {
+    background-color: white;
+    outline: 2px solid black;
+    color: #1E1548;
+    font-size: 2rem;
+    width: 30%;
+    height: 4vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 5%;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #FCD77F;
+    color: black;
+}
+
+.alert-box {
+    background-color: white;
+    color: #1E1548;
+    /* z-index: 1; */
+    position: fixed;
+    top: 120px;
+    width: 50%;
+    height: max-content;
+    margin-top: 10%;
+    margin-left: 21%;
+    padding: 3%;
+    display: none;
+}
+
+.alert-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'VT323', monospace;
+}
+
+.alert-buttons {
+    width: 80%;
+    height: max-content;
+    margin: 5%;
+    margin-bottom: 0;
+    /* padding: 2%; */
+    float: right;
+}
+
+.alert-button {
+    background-color: #2E99B0;
+    font-family: 'VT323', monospace;
+    border: none;
+    outline: none;
+    color:#1E1548;
+    width: 45%;
+    height: max-content;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 1%;
+    margin-bottom: 0;
+}
+
+.alert-button:hover {
+    background-color: #FF2E4C;
+    color: black;
+}
+
+.info-container {
+    margin-top: 2vh;
+    /* text-align: center; */
+    font-family: 'VT323', monospace;
+    font-size: 1.9rem;
+    padding: 2% 10%;
+}
+
+a {
+    color: #FF2E4C;
+}
+
+@media only screen and (min-width: 600px) {
+    .tile-box {
+        width: 63vw;
+        margin-left: 18vw;
+        margin-top: 5vh;
+        margin-bottom: 4vh;
+    }
+
+    .line {
+        height: 21vw;
+    }
+
+    .tile {
+        width: 21vw;
+        height: 21vw;
+    }
+
+    .letter {
+        font-size: 15vw;
+    }
+
+    .button-box {
+        margin-top: 25vh;
+        margin-left: 24vw;
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .tile-box {
+        margin-top: 7%;
+        width: 51vw;
+        margin-left: 23vw;
+    }
+
+    .line {
+        height: 17vw;
+    }
+
+    .tile {
+        height: 17vw;
+        width: 17vw;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .button-box {
+        margin-top: 20vh;
+        margin-left: 23.5vw;
+    }
+
+    .alert-box {
+        top: 100px;
+        width: 40%;
+        margin-left: 26%;
+    }
+
+    .alert-message {
+        font-size: 2.2rem;
+    }
+
+    .alert-button {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .title-container {
+        font-size: 2.7rem;
+        padding-top: 3%;
+    }
+
+    .tile-box {
+        margin-top: 8%;
+        width: 39vw;
+        margin-left: 30.5vw;
+    }
+
+    .line {
+        height: 13vw;
+    }
+
+    .tile {
+        height: 13vw;
+        width: 13w;
+    }
+
+    .letter {
+        font-size: 10vw;
+    }
+
+    .button-box {
+        margin-top: 8%;
+        margin-left: 32vw;
+        width: 36vw;
+    }
+
+    .button {
+        font-size: 2.4rem;
+    }
+
+    .alert-box {
+        top: 20px;
+        width: 30%;
+        margin-left: 32%;
+    }
+
+    .alert-message {
+        font-size: 2.5rem;
+    }
+
+    .alert-button {
+        font-size: 2.3rem;
+    }
+
+    .info-container {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .title-container {
+        font-size: 1.8rem;
+        padding-top: 2px;
+    }
+
+    .tile-box {
+        margin-top: 6vh;
+        width: 30vw;
+        margin-left: 33.5vw;
+        margin-bottom: 0;
+    }
+
+    .line {
+        height: 9vw;
+    }
+
+    .tile {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .alert-message {
+        font-size: 2rem;
+    }
+
+    .button-box {
+        margin-top: -7%;
+        width: 28vw;
+        margin-left: 36vw;
+    }
+
+    .alert-button {
+        font-size: 2rem;
+    }
+}

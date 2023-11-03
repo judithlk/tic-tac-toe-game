@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <!-- <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-container">
+            <h1 id="title">Tic - Tac - Toe</h1>
+        </div>
+        <div class="tile-container" id="tile-container">
+            <div class="tile-box">
+                <div class="line level-one">
+                    <div class="tile" id="tile1" style="border-left: none; border-top: none;" onclick="play(1)"></div>
+                    <div class="tile" id="tile2" style="border-top: none;" onclick="play(2)"></div>
+                    <div class="tile" id="tile3" style="border-right: none; border-top: none;" onclick="play(3)"></div>
+                </div>
+                <div class="line level-two">
+                    <div class="tile" id="tile4" style="border-left: none;" onclick="play(4)"></div>
+                    <div class="tile" id="tile5" onclick="play(5)"></div>
+                    <div class="tile" id="tile6" style="border-right: none;" onclick="play(6)"></div>
+                </div>
+                <div class="line level-three">
+                    <div class="tile" id="tile7" style="border-left: none; border-bottom: none;" onclick="play(7)"></div>
+                    <div class="tile" id="tile8" style="border-bottom: none;" onclick="play(8)"></div>
+                    <div class="tile" id="tile9" style="border-right: none; border-bottom: none;" onclick="play(9)"></div>
+                </div>
+            </div>
+            <div class="button-box">
+                <div class="button" onclick="reset()">Reset</div>
+                <div class="button" id="sound-button" onclick="sound()"><i class="fa-solid fa-volume-xmark"></i></i></div>
+                <div class="button" id="bright-button" onclick="brightness()"><i class="fa-solid fa-lightbulb"></i></div>
+            </div>
+        </div>
+        <div class="alert-box" id="alert-box">
+            <p class="alert-message" id="alert-message">Hi! this is an alert message!</p>
+            <div class="alert-buttons" id="alert-buttons">
+                <button class="alert-button" id="alert-button1"></button>
+                
+            </div>
+        </div>
+        <div class="info-container" id="info-container">
+            <p>This game was built by <a href="#">Judith Yusuf</a> using HTML, CSS and vanilla Javascript. You can view the <a href="#">Github repository</a> and also check out some of my other projects.</p>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/6d0d33bf72.js" crossorigin="anonymous"></script>
+<script src="tic-tac-toe.js"></script>
+</html>
